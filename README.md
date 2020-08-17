@@ -119,8 +119,45 @@ Image center is determined by checking the width and height of the image and dev
 
 ### 5 Finding a single reference point of XY
 In order to find the central point of the die, a reference point must be searched first. The reference point is refering to the point where it is an identical reference to the specific die. In this case, we will be using the 2nd blob on the horizontal blob at the bottom. This reference point is crosshaired in yellow. 
+```csharp
+        private void findRef(double diff, double tollerance)
+        {
+            for (int b = 0; b < center.Count - 1; b++)
+            {
+                if (((center[b + 1].X - center[b].X) > (diff - tollerance)) && ((center[b + 1].X - center[b].X) < (diff + tollerance)))
+                {
+                    refPointList.Add(center[b]);
+                }
+            }
+            if (refPointList.Count > 1)
+            {
+                for (int b = 0; b < refPointList.Count - 1;)
+                {
+                    if (refPointList[b].X < refPointList[b + 1].X)
+                    {
+                        refPointList.RemoveAt(b + 1);
+                    }
+                    else if (refPointList[b].X > refPointList[b + 1].X)
+                    {
+                        refPointList.RemoveAt(b);
+                    }
+                    else
+                    {
+                        b++;
+                    }
+                }
+                if (refPointList.Count == 1)
+                {
+                    refPoint = refPointList[0];
+                }
+            }
+            else
+            {
+                /* Error: unable to search pattern */
+            }
 
-
+        }
+```
 <p>
 <figure>
   	<img src="https://github.com/saadson/Die-Sorting/blob/master/visFinal.bmp" alt="Final Image" width="450" height="Auto">  	
