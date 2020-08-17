@@ -24,7 +24,12 @@ Processing _vis = new Processing();
 string cameraSelect = "21271580";   /* Serial number of the Pylon Camera */
 _vis.Grab(cameraSelect);
 ```
-
+<p align="center">
+<figure>
+  <img src="https://github.com/saadson/Die-Sorting/blob/master/raw.bmp" alt="Raw Image" style="width:50%">
+  <figcaption>Fig.1 - Raw Image</figcaption>
+</figure>
+</p>
 ### 2.1 Image Filtering: Median
 The median filter is normally used to reduce noise in an image, somewhat like the mean filter. However, it often does a better job than the mean filter of preserving useful detail in the image. Each pixel of the original source image is replaced with the median of neighboring pixel values. The median is calculated by first sorting all the pixel values from the surrounding neighborhood into numerical order and then replacing the pixel being considered with the middle pixel value. The filter accepts 8 bpp grayscale images and 24/32 bpp color images for processing.
 ```csharp
@@ -102,3 +107,8 @@ These functions are used as the following:
 filterBlobX(516.0, 1117.0);
 filterBlobY(357.0, 460.0);
 ```
+### 4 Image Center
+Image center is determined by checking the width and height of the image and devide them by 2.
+
+### 5 Finding a single reference point of XY
+In order to find the central point of the die, a reference point must be searched first. The reference point is refering to the point where it is an identical reference to the specific die. In this case, we will be using the 2nd blob on the horizontal blob at the bottom. 
