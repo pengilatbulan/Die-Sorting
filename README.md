@@ -172,8 +172,12 @@ private void findRef(double diff, double tollerance)
 findRef(20.0, 1.5); /* 20.0 is the distance between 1 blob to another, 1.5 is the allowable tolerance*/
 ```
 
-### Find Center XY of the Die
+### 6 Find Center XY of the Die
 The center of the Die is crosshaired in green.
 ```csharp
 findPick(refPoint.X, refPoint.Y);
 ```
+
+### Contributors
+<a href="https://twitter.com/pengilatbulan">@pengilatbulan</a>
+	
