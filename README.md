@@ -118,7 +118,7 @@ filterBlobY(357.0, 460.0);
 Image center is determined by checking the width and height of the image and devide them by 2.
 
 ### 5 Finding a single reference point of XY
-In order to find the central point of the die, a reference point must be searched first. The reference point is refering to the point where it is an identical reference to the specific die. In this case, we will be using the 2nd blob on the horizontal blob at the bottom. This reference point is crosshaired in <p style="color:yellow">yellow.</p>. 
+In order to find the central point of the die, a reference point must be searched first. The reference point is refering to the point where it is an identical reference to the specific die. In this case, we will be using the 2nd blob on the horizontal blob at the bottom. This reference point is crosshaired in yellow. 
 
 
 <p>
