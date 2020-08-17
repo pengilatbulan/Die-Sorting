@@ -55,3 +55,50 @@ filterBlobsFiltering.ApplyInPlace(imageclone);
 ```
 ### 3 Segregate blobs
 In this process, we  need to further filter out blobs from min XY to max XY so that we only process the specific die.
+The following is function used to filter X.
+```csharp
+private void filterBlobX(double low, double high)
+{
+	for (int b = 0; b < center.Count;)
+        {
+        	if (center[b].X < low)
+                {
+                    center.RemoveAt(b);
+                }
+                else if (center[b].X > high)
+                {
+                    center.RemoveAt(b);
+                }
+                else
+                {
+                    b++;
+                }
+	}
+}
+```
+The following is function used to filter X.
+```csharp
+private void filterBlobY(double low, double high)
+{
+	for (int b = 0; b < center.Count;)
+        {
+        	if (center[b].Y < low)
+                {
+                    center.RemoveAt(b);
+                }
+                else if (center[b].Y > high)
+                {
+                    center.RemoveAt(b);
+                }
+                else
+                {
+                    b++;
+                }
+	}
+}
+```
+These functions are used as the following:
+```csharp
+filterBlobX(516.0, 1117.0);
+filterBlobY(357.0, 460.0);
+```
