@@ -60,10 +60,11 @@ filterBlobsFiltering.ApplyInPlace(imageclone);
 ```
 <p>
 <figure>
-  	<img src="https://github.com/saadson/Die-Sorting/blob/master/visimg.bmp" alt="Raw Image" width="450" height="Auto">  	
+  	<img src="https://github.com/saadson/Die-Sorting/blob/master/visimg.bmp" alt="Filtered Image" width="450" height="Auto">  	
 	<figcaption>Fig.2 - Filtered Image</figcaption>	
 </figure>
 </p>
+
 ### 3 Segregate blobs
 In this process, we  need to further filter out blobs from min XY to max XY so that we only process the specific die.
 The following is function used to filter X.
@@ -118,3 +119,11 @@ Image center is determined by checking the width and height of the image and dev
 
 ### 5 Finding a single reference point of XY
 In order to find the central point of the die, a reference point must be searched first. The reference point is refering to the point where it is an identical reference to the specific die. In this case, we will be using the 2nd blob on the horizontal blob at the bottom. 
+
+
+<p>
+<figure>
+  	<img src="https://github.com/saadson/Die-Sorting/blob/master/visFinal.bmp" alt="Final Image" width="450" height="Auto">  	
+	<figcaption>Fig.3 - Final Image</figcaption>	
+</figure>
+</p>
