@@ -8,13 +8,11 @@ This repository covers a systematic approach using C# with AFORGE.NET framework 
 
 ## The Overall Process of Computer Vision
 1. Grab Image
-2. Image Processing (Median, Threshold)
-3. Blob Filtering
-4. Segregate blobs
-5. Image Center
-6. Finding reference XY 
-7. Find Center XY of the Die
-8. Pixel Pitch
+2. Image Processing (Median, Threshold, Blob Filtering)
+3. Segregate blobs
+4. Image Center
+5. Finding reference XY 
+6. Find Center XY of the Die
 
 ## Grab Image
 Image acquisition used in the computer vision is accomplished via Basler.Pylon API. The following is the usage of Grab.
