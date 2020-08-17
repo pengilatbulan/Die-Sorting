@@ -3,6 +3,7 @@ Die sorting is the process of removing a die, package, or device from one carrie
 <p align="center">
     <img src="https://github.com/saadson/Die-Sorting/blob/master/die-sorting.png" width="Auto" height="Auto">
 </p>
+
 ## Computer vision in Die-Sorting
 This repository covers a systematic approach using C# with AFORGE.NET framework in computer vision to identify the center of die in order to accomplish repositioning of the X and Y Axises in Die Sorting.
 
@@ -30,6 +31,7 @@ _vis.Grab(cameraSelect);
 	<figcaption>Fig.1 - Raw Image</figcaption>	
 </figure>
 </p>
+
 ### 2.1 Image Filtering: Median
 The median filter is normally used to reduce noise in an image, somewhat like the mean filter. However, it often does a better job than the mean filter of preserving useful detail in the image. Each pixel of the original source image is replaced with the median of neighboring pixel values. The median is calculated by first sorting all the pixel values from the surrounding neighborhood into numerical order and then replacing the pixel being considered with the middle pixel value. The filter accepts 8 bpp grayscale images and 24/32 bpp color images for processing.
 ```csharp
@@ -88,6 +90,7 @@ private void filterBlobX(double low, double high)
 	}
 }
 ```
+
 The following is function used to filter X.
 ```csharp
 private void filterBlobY(double low, double high)
@@ -167,6 +170,7 @@ private void findRef(double diff, double tollerance)
         }
 }
 ```
+
 #### Usage of function findRef(double diff, double tollerance)
 ```csharp
 findRef(20.0, 1.5); /* 20.0 is the distance between 1 blob to another, 1.5 is the allowable tolerance*/
