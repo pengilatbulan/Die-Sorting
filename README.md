@@ -134,10 +134,10 @@ private void findRef(double diff, double tollerance)
 {
 	for (int b = 0; b < center.Count - 1; b++)
         {
-        	if (((center[b + 1].X - center[b].X) > (diff - tollerance)) && ((center[b + 1].X - center[b].X) < (diff + tollerance)))
-                {
-                    refPointList.Add(center[b]);
-                }
+            if (((center[b + 1].X - center[b].X) > (diff - tollerance)) && ((center[b + 1].X - center[b].X) < (diff + tollerance)))
+            {
+            	refPointList.Add(center[b]);
+            }
         }
         if (refPointList.Count > 1)
         {
