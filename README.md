@@ -26,7 +26,7 @@ _vis.Grab(cameraSelect);
 ```
 <p align="center">
 <figure>
-  <img src="https://github.com/saadson/Die-Sorting/blob/master/raw.bmp" alt="Raw Image" style="width:50%">
+  <img src="https://github.com/saadson/Die-Sorting/blob/master/raw.bmp" alt="Raw Image" style="width:10%">
   <figcaption>Fig.1 - Raw Image</figcaption>
 </figure>
 </p>
