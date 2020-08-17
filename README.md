@@ -28,8 +28,9 @@ _vis.Grab(cameraSelect);
 <figure>
 	<p align="center">
   		<img src="https://github.com/saadson/Die-Sorting/blob/master/raw.bmp" alt="Raw Image" width="450" height="Auto">
-  		<figcaption>Fig.1 - Raw Image</figcaption>
-	</p>
+  	</p>
+	<figcaption align="center">Fig.1 - Raw Image</figcaption>
+	
 </figure>
 
 ### 2.1 Image Filtering: Median
