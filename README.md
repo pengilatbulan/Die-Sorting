@@ -119,6 +119,16 @@ Image center is determined by checking the width and height of the image and dev
 
 ### 5 Finding a single reference point of XY
 In order to find the central point of the die, a reference point must be searched first. The reference point is refering to the point where it is an identical reference to the specific die. In this case, we will be using the 2nd blob on the horizontal blob at the bottom. This reference point is crosshaired in yellow. 
+
+<p>
+<figure>
+  	<img src="https://github.com/saadson/Die-Sorting/blob/master/visFinal.bmp" alt="Final Image" width="450" height="Auto">  	
+	<figcaption>Fig.3 - Final Image</figcaption>	
+</figure>
+</p>
+
+#### The function used to find the reference point XY
+
 ```csharp
 private void findRef(double diff, double tollerance)
 {
@@ -157,9 +167,7 @@ private void findRef(double diff, double tollerance)
         }
 }
 ```
-<p>
-<figure>
-  	<img src="https://github.com/saadson/Die-Sorting/blob/master/visFinal.bmp" alt="Final Image" width="450" height="Auto">  	
-	<figcaption>Fig.3 - Final Image</figcaption>	
-</figure>
-</p>
+#### usage of function findRef(double diff, double tollerance)
+```csharp
+findRef(20.0, 1.5); /* 20.0 is the distance between 1 blob to another, 1.5 is the allowable tolerance*/
+```
