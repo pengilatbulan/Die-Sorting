@@ -1,7 +1,7 @@
 # Die-Sorting
 Die sorting is the process of removing a die, package, or device from one carrier medium (commonly a diced wafer on tape frame) and placing them into another carrier medium.
 <p align="center">
-![logo](https://github.com/saadson/Die-Sorting/blob/master/die-sorting.png)
+    <img src="https://github.com/saadson/Die-Sorting/blob/master/die-sorting.png" width="Auto" height="Auto">
 </p>
 ## Computer vision in Die-Sorting
 This repository covers a systematic approach using C# with AFORGE.NET framework in computer vision to identify the center of die in order to accomplish repositioning of the X and Y Axises in Die Sorting.
